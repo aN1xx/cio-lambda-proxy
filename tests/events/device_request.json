@@ -1,0 +1,36 @@
+{
+  "version": "2.0",
+  "routeKey": "$default",
+  "rawPath": "/api/v1/device",
+  "rawQueryString": "",
+  "headers": {
+    "date": "Mon, 21 Jul 2025 17:47:19 GMT",
+    "content-length": "407",
+    "host": "example.lambda-url.eu-central-1.on.aws",
+    "content-type": "application/json",
+    "authorization": "Signature keyId=\"api-gateway\",algorithm=\"rsa-sha256\",headers=\"date firebase-user-id x-user-email digest\",signature=\"test_signature\"",
+    "firebase-user-id": "test-user-123",
+    "x-user-email": "test@example.com",
+    "digest": "SHA-256=test_digest"
+  },
+  "requestContext": {
+    "accountId": "anonymous",
+    "apiId": "test-api-id",
+    "domainName": "example.lambda-url.eu-central-1.on.aws",
+    "domainPrefix": "example",
+    "http": {
+      "method": "PUT",
+      "path": "/api/v1/device",
+      "protocol": "HTTP/1.1",
+      "sourceIp": "127.0.0.1",
+      "userAgent": "Test Agent"
+    },
+    "requestId": "test-request-id",
+    "routeKey": "$default",
+    "stage": "$default",
+    "time": "21/Jul/2025:17:47:19 +0000",
+    "timeEpoch": 1753120039705
+  },
+  "body": "{\n  \"device\": {\n    \"id\": \"fa5dmwSWsEeyglMnrzlo1I:APA91bELQ2hp6ZfUjgrj1_LzseW_5daed180PrHKFA0bY8mpbghydiK5mCYtCefXfem9MGNjWclcAlSpLB_GU8VgoacHm58RG3IvgzSmkXcuFOFtI1DgcBI\",\n    \"platform\": \"ios\",\n    \"last_used\": 1752474982293,\n    \"attributes\": {\n      \"device_os\": \"ios\",\n      \"device_model\": \"iPhone\",\n      \"app_version\": \"1.2.161\",\n      \"device_locale\": \"ru_KG\",\n      \"push_enabled\": true\n    }\n  }\n}",
+  "isBase64Encoded": false
+} 

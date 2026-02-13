@@ -1,0 +1,28 @@
+{
+  "httpMethod": "POST",
+  "path": "/api/v1/customers/{identifier}/events",
+  "headers": {
+    "Content-Type": "application/json",
+    "Authorization": "Signature keyId=\"api-gateway\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date content-type content-length\",signature=\"test-signature\"",
+    "Date": "Thu, 05 Jan 2024 21:31:40 GMT",
+    "Host": "example.lambda-url.eu-central-1.on.aws",
+    "Content-Length": "67",
+    "X-User-Email": "user@example.com"
+  },
+  "body": "{\"name\": \"page_view\", \"data\": {\"url\": \"/dashboard\", \"title\": \"Dashboard\"}}",
+  "queryStringParameters": null,
+  "pathParameters": {
+    "proxy": "customers/{identifier}/events"
+  },
+  "stageVariables": null,
+  "requestContext": {
+    "accountId": "123456789012",
+    "apiId": "test-api-id",
+    "httpMethod": "POST",
+    "requestId": "test-request-id",
+    "resourceId": "test-resource-id",
+    "resourcePath": "/{proxy+}",
+    "stage": "dev"
+  },
+  "isBase64Encoded": false
+} 

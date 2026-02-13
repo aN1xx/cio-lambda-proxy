@@ -1,0 +1,10 @@
+[bandit]
+# Configuration for bandit security scanner
+
+# Skip B413 for pycryptodome imports
+# B413 incorrectly flags pycryptodome as deprecated pycrypto
+# pycryptodome is actively maintained and secure
+skips = B413
+
+# Only scan our source code directory
+exclude = tests/,build/,.venv/ 

@@ -1,0 +1,9 @@
+{
+  "httpMethod": "POST",
+  "path": "/api/v1/customers/{identifier}/events",
+  "headers": {
+    "Content-Type": "application/json",
+    "Authorization": "Signature keyId=\"api-gateway\",algorithm=\"rsa-sha256\",headers=\"date content-type content-length\",signature=\"mock-signature-for-anonymous-request\""
+  },
+  "body": "{\"id\": \"fcm_token_12345\", \"name\": \"notification_received\", \"data\": {\"notification_id\": \"notif_12345\", \"fcm_token\": \"fcm_token_12345\", \"app_version\": \"1.2.3\"}}"
+} 
