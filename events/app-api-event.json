@@ -1,0 +1,30 @@
+{
+  "httpMethod": "GET",
+  "path": "/api/v1/campaigns",
+  "headers": {
+    "Content-Type": "application/json",
+    "Authorization": "Signature keyId=\"api-gateway\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date content-type\",signature=\"test-signature\"",
+    "Date": "Thu, 05 Jan 2024 21:31:40 GMT",
+    "Host": "example.lambda-url.eu-central-1.on.aws",
+    "X-User-Email": "admin@example.com"
+  },
+  "body": null,
+  "queryStringParameters": {
+    "limit": "10",
+    "offset": "0"
+  },
+  "pathParameters": {
+    "proxy": "campaigns"
+  },
+  "stageVariables": null,
+  "requestContext": {
+    "accountId": "123456789012",
+    "apiId": "test-api-id",
+    "httpMethod": "GET",
+    "requestId": "test-request-id",
+    "resourceId": "test-resource-id",
+    "resourcePath": "/{proxy+}",
+    "stage": "dev"
+  },
+  "isBase64Encoded": false
+} 

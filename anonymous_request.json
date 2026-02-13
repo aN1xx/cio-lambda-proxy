@@ -1,0 +1,17 @@
+{
+  "httpMethod": "POST",
+  "path": "/api/v1/events",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Mobile-App/1.0",
+    "Host": "example.lambda-url.eu-central-1.on.aws"
+  },
+  "body": "{\"anonymous_id\": \"device-123\", \"name\": \"app_open\", \"data\": {\"version\": \"1.2.3\", \"platform\": \"ios\"}}",
+  "queryStringParameters": null,
+  "pathParameters": null,
+  "requestContext": {
+    "requestId": "test-request-id-anonymous",
+    "stage": "prod",
+    "accountId": "123456789012"
+  }
+} 

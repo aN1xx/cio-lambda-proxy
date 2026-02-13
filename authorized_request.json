@@ -1,0 +1,20 @@
+{
+  "httpMethod": "POST",
+  "path": "/api/v1/customers/test@example.com/events",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Mobile-App/1.0",
+    "Host": "example.lambda-url.eu-central-1.on.aws",
+    "Authorization": "Signature keyId=\"api-gateway\",algorithm=\"rsa-sha256\",signature=\"test-signature\""
+  },
+  "body": "{\"name\": \"page_view\", \"data\": {\"page\": \"dashboard\", \"timestamp\": 1703097600}}",
+  "queryStringParameters": null,
+  "pathParameters": {
+    "identifier": "test@example.com"
+  },
+  "requestContext": {
+    "requestId": "test-request-id",
+    "stage": "prod",
+    "accountId": "123456789012"
+  }
+} 

@@ -1,0 +1,10 @@
+{
+  "httpMethod": "POST",
+  "path": "/api/v1/customers/{identifier}/events",
+  "headers": {
+    "Content-Type": "application/json",
+    "X-User-Email": "user@example.com",
+    "Authorization": "Signature keyId=\"api-gateway\",algorithm=\"rsa-sha256\",headers=\"date content-type content-length\",signature=\"mock-signature-for-authorized-request\""
+  },
+  "body": "{\"name\": \"app_opened\", \"data\": {\"source\": \"push_notification\", \"campaign_id\": \"welcome_series\", \"app_version\": \"1.2.3\", \"device_model\": \"iPhone 15\"}}"
+} 

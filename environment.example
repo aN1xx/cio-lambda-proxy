@@ -1,0 +1,21 @@
+# Customer.io API Configuration
+# For Track API (main usage for mobile app)
+CIO_API_KEY=your_customer_io_track_api_key_here
+CIO_SITE_ID=your_customer_io_site_id_here
+
+# For App API (email sending, activities, campaigns)
+CIO_APP_API_KEY=your_customer_io_app_api_key_here
+
+# Authentication - RSA public key for verifying HTTP Signatures from API Gateway
+API_GATEWAY_PUBLIC_KEY=-----BEGIN PUBLIC KEY-----
+your_rsa_public_key_here
+-----END PUBLIC KEY-----
+
+# Optional: Customer.io API Base URLs (defaults to global endpoints)
+# For EU region use:
+# CIO_TRACK_API_BASE_URL=https://track-eu.customer.io/api/v1/
+# CIO_APP_API_BASE_URL=https://api-eu.customer.io/v1/
+
+# Development settings
+ENVIRONMENT=dev
+SKIP_AUTH=true  # Only for local development!

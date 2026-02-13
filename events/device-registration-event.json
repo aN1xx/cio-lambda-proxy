@@ -1,0 +1,10 @@
+{
+  "httpMethod": "PUT",
+  "path": "/api/v1/customers/{identifier}/devices",
+  "headers": {
+    "Content-Type": "application/json",
+    "X-User-Email": "user@example.com",
+    "Authorization": "Signature keyId=\"api-gateway\",algorithm=\"rsa-sha256\",headers=\"date content-type content-length\",signature=\"mock-signature-for-device-reg\""
+  },
+  "body": "{\"device\": {\"id\": \"fcm_token_12345\", \"platform\": \"ios\", \"last_used\": 1640995200, \"attributes\": {\"device_os\": \"iOS 17.1\", \"device_model\": \"iPhone 15\", \"app_version\": \"1.2.3\", \"device_locale\": \"en_US\", \"push_enabled\": \"true\"}}}"
+} 
